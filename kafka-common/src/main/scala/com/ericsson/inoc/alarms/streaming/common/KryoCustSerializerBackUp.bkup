@@ -1,0 +1,122 @@
+package com.ericsson.inoc.alarms.streaming.common
+
+/*
+package com.knoldus.kafka.serializer
+
+import java.io.Closeable;
+import java.util.Map;
+import java.nio.charset.Charset;
+import java.util.Locale;
+
+import com.esotericsoftware.kryo.Kryo;
+
+import com.esotericsoftware.kryo.io.ByteBufferInput;
+import com.esotericsoftware.kryo.io.ByteBufferOutput;
+import com.esotericsoftware.kryo.io.Input;
+import com.esotericsoftware.kryo.io.Output;
+
+
+import org.apache.kafka.common.serialization.Deserializer;
+import org.apache.kafka.common.serialization.Serializer;
+
+import com.knoldus.kafka.objclass.Alarms
+
+class KryoCustSerializer extends Serializer[Alarms] with Deserializer[Alarms]// with kafka.serializer.Decoder[Alarms]
+{
+        var c1 = 0
+        var c2 = 0
+        println("Executing Kryo Serializer ....")
+        val kryos = new ThreadLocal[Kryo]() {
+        override def initialValue() : Kryo = {
+            val kryo = new Kryo();
+            println("Kryo Registration......")
+            //kryo.register(classOf[Alarms], 8)
+            kryo.register(classOf[Alarms],  new KryoInternalSerializer)
+            //kryo.addDefaultSerializer(classOf[Alarms], new KryoInternalSerializer);
+            
+            //kryo.register(classOf[Alarms], new FieldSerializer(kryo, classOf[Alarms]))
+            
+            return kryo;
+        };
+    };
+
+    
+    override def configure(map : Map[String, _], b : Boolean) : Unit ={
+    println("Configure Method got called....")
+    }
+
+    
+    override def serialize(s : String, al : Alarms) : Array[Byte] = {
+        
+        val output = new Output(10000);
+        c1 = c1 + 1
+        println("Serialize Method is being Executed ....  "+c1)
+        //kryos.get().writeObject(output,al.getClass);
+        kryos.get().writeObjectOrNull(output, al ,al.getClass)
+        println("writeObjectOrNull got Executed ....  "+c1)
+        return output.toBytes();
+        
+    }
+
+    
+    override def deserialize(s : String, bytes : Array[Byte]) : Alarms = {
+            //return kryos.get().readObject(new ByteBufferInput(bytes), classOf[Alarms]);
+            //val input = new Input(bytes);
+            c2 = c2 + 1
+            println("De-serialize Method is being Executed ....  "+c2)
+            return kryos.get().readObjectOrNull(new Input(bytes),classOf[Alarms]);
+            //kryos.get().readObjectOrNull(input,classOf[Alarms]);
+            //println("readObjectOrNull got Executed ....  "+c2)
+            //return input.asInstanceOf[Alarms]
+            //return kryos.get().readObject(new Input(bytes),classOf[Alarms]);
+            
+    }
+
+    
+    override def close() : Unit = {
+    println("Close Method is being Executed ....")
+    }
+
+    
+}
+class KryoInternalSerializer extends com.esotericsoftware.kryo.Serializer[Alarms] {
+        var c3 = 0
+        var c4 = 0
+        val CHARSET = Charset.forName("UTF-8")
+        override def write(kryo : Kryo, output : Output, al : Alarms) : Unit = {
+        
+            output.writeString(al.getLstOcr());
+            output.writeString(al.getNode());
+            output.writeString(al.getNodeType());
+            output.writeString(al.getX733sp());
+            c3 = c3 + 1
+            println("Kryo-Write Method is being Executed ....  "+c3)
+            //output.write(al)
+            //val line = String.format(Locale.ROOT, "%s|%s|%s|%s",al.getLstOcr(),al.getNode(),al.getNodeType,al.getX733sp() );
+            //val bdata =line.getBytes(CHARSET)
+            //bdata.foreach(output.writeByte)
+            //output.writeObjectData(al)
+            
+        }
+
+        
+        override def read(kryo : Kryo, input : Input, al : Class[Alarms] ) : Alarms = {
+        
+            /*String id = input.readString();
+            
+            Sensor.Type type = Sensor.Type.valueOf(input.readString());
+
+            return new SensorReading(new Sensor(id, type), input.readLong(true), input.readDouble());*/
+            //val msg : Array[Byte] = input.readByte()
+            /*val msg = input.readString()
+            val bmsg = msg.getBytes(CHARSET)
+            var parts = new String(bmsg, CHARSET).split("|");
+            return new Alarms(parts(0), parts(1), parts(2),parts(3))*/
+            c4 = c4 + 1
+            println("Kryo-Read Method is being Executed ....  "+c4)
+            return new Alarms(input.readString(),input.readString(),input.readString(),input.readString())
+            
+        }
+}
+
+*/

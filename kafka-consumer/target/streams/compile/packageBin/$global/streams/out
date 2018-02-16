@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0mPackaging /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/inoc-kafka-consumer_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2$.class[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	com/ericsson[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming[0m
+[0m[[0mdebug[0m] [0m	com[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer/Consumer2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer/Consumer2.class[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer/Consumer2$$anonfun$run$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer/Consumer2$$anonfun$run$1.class[0m
+[0m[[0mdebug[0m] [0m	com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/neo/sources/inoc-streaming/kafka-consumer/target/scala-2.11/classes/com/ericsson/inoc/alarms/streaming/consumer/ConsumerApp2.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

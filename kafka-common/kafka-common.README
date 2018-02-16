@@ -1,0 +1,26 @@
+# kafka-common dir :
+--------------------
+
+--> This directory contains class definitions which are common to kafka-producer, kafka-conusmer, spark-consumer classes.
+--> For inbuilt library classes please refer build.sbt file
+
+)> Alarms.scala : Alarms(LSTOCR,NODE,NODETYPE,X733SPECIFICPROB)
+
+)> AlarmsV2.scala : AlarmsV2(GEN_TIME,MSG_INT_DATA)
+
+)> AlarmsV3.scala : AlarmsV3(GEN_TIME,MSG_CHAR_DATA)
+
+)> AlarmsV4.scala : AlarmsV4(GEN_TIME,INVOICE_NO,ITEM)
+
+)> KryoCustSerializer.scala : For serializing/deserializing Alarms objects
+
+)> KryoCustSerializerV2.scala : For serializing/deserializing AlarmsV2 objects
+
+)> KryoCustSerializerV3.scala : For serializing/deserializing AlarmsV3 objects
+
+)> KryoCustSerializerV4.scala : For serializing/deserializing AlarmsV4 objects
+
+)> StringCustSerializer.scala : For serializing/deserialzing string variant of Alarms.scala (commented code in Alarms.scala)
+
+
+

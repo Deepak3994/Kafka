@@ -1,0 +1,16 @@
+name := """activator-newconsumer"""
+
+version := "1.0"
+
+scalaVersion := "2.11.8"
+val sparkVersion = "2.0.1"
+val kryoVersion = "4.0.0"
+
+libraryDependencies ++= Seq(
+	"org.apache.spark" %% "spark-streaming" % sparkVersion,
+	"org.apache.spark" %% "spark-streaming-kafka-0-8" % sparkVersion,
+        "com.esotericsoftware" % "kryo" % kryoVersion,
+        "org.apache.kafka" % "kafka_2.11" % "0.10.0.0"
+        
+)
+

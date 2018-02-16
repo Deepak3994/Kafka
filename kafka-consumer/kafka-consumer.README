@@ -1,0 +1,9 @@
+# kafka-consumer dir :
+----------------------
+
+--> This directory contains only one class that implements kafka-consumer to receive Alarms objects produced by ProducerApp2.scala and prints them on the console.
+--> For inbuilt library classes please refer build.sbt file
+
+	Related Classes :	Alarms.scala, KryoCustSerializer.scala, StringCustSerializer.scala, ProducerApp2.scala, CustomKafkaSparkConsumer.scala, CustKryoRegistrator.scala.
+
+
